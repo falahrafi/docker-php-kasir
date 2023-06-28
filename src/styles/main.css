@@ -1,0 +1,242 @@
+body {
+   background: #FFFFFF url('../assets/geometric-leaves.webp') repeat;
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+.main-container {
+   min-height: 86vh;
+   border: 0;
+   border-radius: 24px;
+   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+}
+
+h2 {
+   color: white;
+   font-family: 'Maven Pro', sans-serif;
+   font-size: 30px;
+}
+
+h5 {
+   color: white;
+   font-family: 'Maven Pro', sans-serif;
+}
+
+.daftar-barang-container {
+   background: #1f1f1f url('../assets/gradient-blur.png') repeat-y !important;
+   background-size: cover !important;
+   padding: 48px 96px;
+}
+
+.table-daftar-barang {
+   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(30px);
+   border-radius: 24px;
+   border-left: 2px solid rgba(255, 255, 255, 0.4);
+   color: white !important;
+   font-size: 16px;
+   overflow: hidden;
+}
+
+.table-daftar-barang i {
+   color: #B3EB50;
+}
+
+.table-daftar-barang thead {
+   background-color: rgba(255, 255, 255, .16);
+   border-top: 2px solid rgba(255, 255, 255, 0.4);
+   border-bottom: 1px solid rgba(255, 255, 255,.4);
+}
+
+.table-daftar-barang thead th {
+   padding: 16px 30px 16px !important;
+}
+
+.table-daftar-barang thead tr {
+   background: linear-gradient(116.86deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.table-daftar-barang tbody th, tbody td {
+   font-weight: 400;
+   padding: 20px 30px 20px !important;
+}
+
+.table-daftar-barang tbody tr:nth-child(odd) {
+   background: linear-gradient(116.86deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.table-daftar-barang tbody tr:nth-child(even) {
+   background: linear-gradient(116.86deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.pembayaran-container {
+   position: relative;
+   background: linear-gradient(180deg, #B3EB50 0%, #429421 100%) !important;
+   padding: 48px 48px;
+}
+
+
+
+.input-kode,
+.input-jumlah {
+   background-color: transparent;
+   border: 2px solid white;
+   border-radius: 30px;
+   color: white !important;
+   font-size: 14px;
+   font-weight: 700;
+   transition: all 0.3s ease-in-out;
+}
+
+.input-kode:focus,
+.input-jumlah:focus {
+   background-color: rgba(255, 255, 255, 0.16);
+   color: white;
+   border: 2px solid white;
+   border-radius: 8px;
+   box-shadow: none;
+   transition: all 0.3s ease-in-out;
+}
+
+.input-jumlah {
+   text-align: center;
+}
+
+.input-jumlah-container {
+   position: relative;
+}
+
+.input-jumlah-number-container {
+   position: absolute;
+   width: 90%;
+}
+
+.btn-plus-minus {
+   position: relative;
+   color: white;
+   z-index: 10;
+}
+.btn-plus-minus:hover,
+.btn-plus-minus:focus {
+   border: none !important;
+   border-radius: 30px;
+   background-color: rgba(255, 255, 255, 0.2);
+   color: white;
+}
+
+.btn-minus {
+   float: left;
+}
+.btn-plus {
+   float: right;
+}
+
+::placeholder {
+   color: white !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+hr {
+   border: 1px solid white;
+   opacity: .8;
+}
+
+.btn-tambah-barang {
+   border: none;
+   color: white;
+   transition: all .2s ease-in-out;
+}
+.btn-tambah-barang:hover {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 16.5px;
+}
+.btn-tambah-barang:focus {
+   color: white;
+}
+
+.btn-hitung-pembayaran {
+   width: fit-content;
+   background: linear-gradient(to right, #1f1f1f, #414141, #414141, #1f1f1f);
+   background-position: left;
+   background-size: 320%;
+   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);  
+   border-radius: 50px;
+   color: white !important;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 12px 42px 12px !important;
+   transition: all 0.3s ease-in-out;
+} .btn-hitung-pembayaran:hover {
+   background-position: right;
+   border: none;
+   font-size: 17px;
+}
+
+.total-pembayaran-container {
+}
+
+.total-pembayaran-nilai-container {
+   border: 2px solid white;
+   border-radius: 24px;
+   color: white;
+   font-weight: 700;
+}
+.total-pembayaran-nilai-container h4 {
+   font-weight: 700;
+}
+
+.total-pembayaran-detail {
+   border-radius: 24px;
+   border: 2px solid white;
+}
+
+.total-pembayaran-detail div {
+   color: white !important;
+}
+
+.table-pembayaran-detail {
+   color: white !important;
+}
+
+.detail-top {
+   border-bottom: 1px solid white;
+}
+
+.detail-jumlah {
+   background-color: white;
+   border-radius: 30px;
+   color: #429421;
+   font-size: 16px;
+   font-weight: 700;
+   padding: 2px 6px 2px;
+}
+
+.detail-harga {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.bg-white-transparent {
+   background-color: rgba(255, 255, 255, .1);
+}
+
+
+.copyright {
+   color: white;
+}
+
+.copyright span {
+   color: #B3EB50;
+}
